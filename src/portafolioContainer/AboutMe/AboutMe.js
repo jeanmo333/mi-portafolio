@@ -22,7 +22,7 @@ export default class AboutMe extends Component {
             <h2 className="titulo">Sobre mi</h2>
             <p className="resumen">
              Soy Moril Jean-francois, Estudiante en el ultimo de Analista programador
-             Computacional. Instituto Profesional de chile(IpChile). Me encanta la Informatica
+             Computacional. Instituto Profesional de chile(IPCHILE). Me encanta la Informatica
              y todo que tiene que ver con el mundo tecnologico. pero mi especilidad es
              Desarrollador web.
             </p>
