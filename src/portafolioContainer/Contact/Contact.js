@@ -115,7 +115,7 @@ export default function Contact() {
               placeholder="Tu Nombre"
               name="nombre"
              onChange={handleInputChange}
-             onChange={handleBotomChange}
+           
             />
           </div>
 
@@ -127,7 +127,7 @@ export default function Contact() {
               placeholder="Tu Email"
               name="email"
              onChange={handleInputChange}
-             onChange={handleBotomChange}
+
             />
           </div>
 
@@ -139,7 +139,7 @@ export default function Contact() {
               placeholder="Tu Asunto"
               name="asunto"
              onChange={handleInputChange}
-             onChange={handleBotomChange}
+           
             />
           </div>
 
@@ -150,7 +150,7 @@ export default function Contact() {
               cols="10"
               name="mensaje"
               onChange={handleInputChange}
-              onChange={handleBotomChange}
+          
             ></textarea>
           </div>
           {spinner ? <Spinner /> : null}
