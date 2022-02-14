@@ -22,6 +22,12 @@ body{
     font-weight: 900;
 }
 
+
+.btn-info:disabled{
+ cursor:not-allowed;
+ background-color: gray;
+}
+
 /* Formulario */
 .formulario {
     max-width: 40rem;

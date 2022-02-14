@@ -19,6 +19,8 @@ export default function Contact() {
   const [error, guardarError] = useState(false);
   //state de Spinner
   const [spinner, guardarSpinner] = useState(false);
+  //state del boton de
+  const [disabled, setDisabled] = useState(true);
 
   const form = useRef();
 
@@ -36,9 +38,11 @@ export default function Contact() {
       guardarError(true);
       return;
     }
+  
 
     //eliminar el errror
     guardarError(false);
+
     emailjs
       .sendForm(
         "service_rein75b",
@@ -84,11 +88,31 @@ export default function Contact() {
 
   //captando lo que se esta escribiendo en el input
   const handleInputChange = (e) => {
+      
     guardarDatos({
       ...Datos,
       [e.target.name]: e.target.value,
     });
   };
+
+
+  const handleBotomChange = (e) => {
+       //validar el boton
+       if (
+       e.target.value.length !== 0 &&
+       e.target.value.length !== 0 &&
+       e.target.value.length !== 0 &&
+       e.target.value.length !== 0
+      ) {
+        //deshabilitar el boton
+        setDisabled(false);
+        return;
+      }
+       //habilitar el boton
+       setDisabled(true);
+
+
+  }
 
 
 
@@ -110,6 +134,7 @@ export default function Contact() {
               placeholder="Tu Nombre"
               name="nombre"
              onChange={handleInputChange}
+             onChange={handleBotomChange}
             />
           </div>
 
@@ -121,6 +146,7 @@ export default function Contact() {
               placeholder="Tu Email"
               name="email"
              onChange={handleInputChange}
+             onChange={handleBotomChange}
             />
           </div>
 
@@ -132,6 +158,7 @@ export default function Contact() {
               placeholder="Tu Asunto"
               name="asunto"
              onChange={handleInputChange}
+             onChange={handleBotomChange}
             />
           </div>
 
@@ -142,11 +169,12 @@ export default function Contact() {
               cols="10"
               name="mensaje"
               onChange={handleInputChange}
+              onChange={handleBotomChange}
             ></textarea>
           </div>
           {spinner ? <Spinner /> : null}
 
-          <button className="btn btn-info" type="submit" value="Enviar" >Enviar</button>
+          <button disabled={true} className="btn btn-info" type="submit" value="Enviar">Enviar</button>
         </fieldset>
       </form>
     </div>
