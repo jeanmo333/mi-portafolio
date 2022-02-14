@@ -38,8 +38,8 @@ export default class AboutMe extends Component {
 
             <p className="label">HTML</p>
             <div className="progress">
-              <div className="progress-bar" style={{ width: "85%" }}>
-                85%
+              <div className="progress-bar" style={{ width: "80%" }}>
+                80%
               </div>
             </div>
 
