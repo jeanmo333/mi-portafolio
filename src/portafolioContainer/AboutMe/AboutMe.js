@@ -45,8 +45,8 @@ export default class AboutMe extends Component {
 
             <p className="label">CSS</p>
             <div className="progress">
-              <div className="progress-bar" style={{ width: "80%" }}>
-                80%
+              <div className="progress-bar" style={{ width: "65%" }}>
+                65%
               </div>
             </div>
 
