@@ -19,8 +19,6 @@ export default function Contact() {
   const [error, guardarError] = useState(false);
   //state de Spinner
   const [spinner, guardarSpinner] = useState(false);
-  //state del boton de
-  const [disabled, setDisabled] = useState(true);
 
   const form = useRef();
 
@@ -96,23 +94,6 @@ export default function Contact() {
   };
 
 
-  const handleBotomChange = (e) => {
-       //validar el boton
-       if (
-       e.target.value.length !== 0 &&
-       e.target.value.length !== 0 &&
-       e.target.value.length !== 0 &&
-       e.target.value.length !== 0
-      ) {
-        //deshabilitar el boton
-        setDisabled(false);
-        return;
-      }
-       //habilitar el boton
-       setDisabled(true);
-
-
-  }
 
 
 
@@ -174,7 +155,7 @@ export default function Contact() {
           </div>
           {spinner ? <Spinner /> : null}
 
-          <button disabled={true} className="btn btn-info" type="submit" value="Enviar">Enviar</button>
+          <button  className="btn btn-info" type="submit" value="Enviar">Enviar</button>
         </fieldset>
       </form>
     </div>
