@@ -1,5 +1,5 @@
 .contenedor{
-  width: 50%;
+  width: 60%;
   margin: 0 auto ; 
 }
 
@@ -11,7 +11,7 @@
     box-shadow: 0 1px 0px 0px white;
     border-radius: 50%;
     height: 380px;
-    width: 380px;
+    width: 50%;
     margin: 0 auto;
     margin-top: 6rem;
   
@@ -32,17 +32,18 @@
     transition: 1s ease-out;
   }
 
+ 
+
   .acerca-de .info .titulo {
     width: 92%;
     margin: 0 auto;
-  }
-
-  .acerca-de .info .titulo {
-    color: white;
+    color: var(--dark-orange);
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-size: 40px;
     margin-bottom: 15px;
+  
+   
   }
   
   .acerca-de .info .resumen {
@@ -59,7 +60,7 @@
   }
   
   .acerca-de .info .progress {
-    background: #6da1bb;
+    background: var(--dark-orange);
     border-radius: 0px;
     margin-bottom: 15px;
     height: 25px;
@@ -71,7 +72,7 @@
   }
   
   .acerca-de .info .progress .progress-bar {
-  background: var(--dark-orange);
+  background: #6da1bb;
   line-height: 25px;
   text-align: left;
   padding-left: 20px;
@@ -86,8 +87,8 @@
     }
 
     .perfil {
-     
       margin-top: 2rem;
+      width: 100%;
     }
 
     
@@ -95,4 +96,6 @@
     margin-bottom: 2rem;
    
   }
+
+
 }

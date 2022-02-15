@@ -1,4 +1,10 @@
 
+.contenedor{
+  width: 80%;
+  margin: 0 auto ; 
+}
+
+
 .profile-container {
   display: flex;
   align-items: center;
@@ -120,6 +126,12 @@ font-weight: bold;
     padding: 11px 0;
     z-index: 700;
   }
+
+  .contenedor{
+    width: 100%;
+    margin: 0 auto ; 
+  }
+  
 }
 
 @media screen and (max-width: 910px) {
@@ -137,6 +149,12 @@ font-weight: bold;
   .profile-container {
     margin-top: 0px;
   }
+
+  .contenedor{
+    width: 100%;
+    margin: 0 auto ; 
+  }
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -185,6 +203,12 @@ font-weight: bold;
     font-size: 15px;
     text-align: justify;
   }
+
+  .contenedor{
+    width: 100%;
+    margin: 0 auto ; 
+  }
+  
 }
 
 @media screen and (max-width: 375px) {
@@ -207,4 +231,10 @@ font-weight: bold;
     font-size: 15px;
     text-align: justify;
   }
+
+  .contenedor{
+    width: 100%;
+    margin: 0 auto ; 
+  }
+  
 }
