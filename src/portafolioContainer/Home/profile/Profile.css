@@ -89,7 +89,7 @@ font-weight: bold;
 }
 
 .profile-picture-background:hover {
-  transform: scale(1.07);
+  transform: scale(1.04);
   transition: 1s ease-out;
 }
 

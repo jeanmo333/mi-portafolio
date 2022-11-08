@@ -94,7 +94,7 @@ export default class AboutMe extends Component {
             </div>
 
             <p className="label">Php</p>
-            <div className="progress">
+            <div className="progress mb-5">
               <div className="progress-bar" style={{ width: "15%" }}>
                 15%
               </div>
