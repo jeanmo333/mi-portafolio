@@ -1,0 +1,156 @@
+.h1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: 900;
+ 
+}
+
+.card-title{
+    color: var(--dark-orange);
+    font-weight: 900;
+}
+
+
+.boton{
+    background-color: var(--dark-orange);
+}
+
+.card-text{
+    text-align: justify;
+}
+
+.text-center{
+    font-weight: 900;
+}
+
+
+      .card{
+        margin-bottom: 1rem;
+    }
+    
+
+    .h1{
+        color: white;
+        font-weight: 900;
+    }
+
+
+@media screen and (min-width: 678px) {
+    .contenador-card{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+        row-gap: 1rem;
+        justify-content: center;
+       
+    }
+
+    .card{
+        margin-bottom: 0;
+       
+    }
+
+    img{
+        height: 8rem;
+        object-fit: cover;
+        background-size: cover;
+        max-width: 100%;
+        display: block;
+    }
+    
+
+    .container {
+        max-width: 70%;
+        margin-bottom: 5rem;
+      }
+
+      .card{
+        margin-bottom: 0;
+    }
+    
+
+    .h1{
+        margin-top: 5rem;
+        color: white;
+        font-weight: 900;
+    }
+    
+}
+
+/*
+.contenedor-project {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+
+.contenido-principal{
+    margin-bottom: 1rem;
+} 
+
+.listado-productos {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    grid-auto-flow: inherit;
+}
+
+.card-title{
+    color: var(--dark-orange);
+    font-weight: 900;
+}
+
+
+.boton{
+    background-color: var(--dark-orange);
+}
+
+.card-text{
+    text-align: justify;
+}
+
+.text-center{
+    font-weight: 900;
+}
+
+img{
+    max-height: 115px;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.fila{
+    margin-bottom: 5rem;
+}
+
+@media (max-width: 768px) { 
+    .listado-productos  {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contenedor-project {
+        margin-top: 2rem;
+      }
+
+      .col-sm:last-child{
+        margin-bottom: 1rem;
+    }
+    
+}
+
+
+.listado-productos img {
+    height: 35rem;
+    width: 35rem;
+    object-fit: cover;
+}
+
+.producto {
+    background-color: #037bc0;
+    margin-bottom: 2rem;
+}
+
+*/

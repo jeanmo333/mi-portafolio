@@ -1,0 +1,115 @@
+
+body{
+    background-color: rgb(24, 20, 20);
+}
+
+.contenedor {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 12rem;
+}
+
+.error{
+   color:red;
+}
+
+.btn-info{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: var(--dark-orange);
+    background-color: var(--dark-orange);
+    color: white;
+    font-weight: 900;
+}
+
+
+.btn-info:disabled{
+ cursor:not-allowed;
+ background-color: gray;
+}
+
+/* Formulario */
+.formulario {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 6rem;
+   
+
+}
+
+.formulario fieldset {
+   border: 1px solid white;
+   margin-bottom: 0.5rem;
+  
+}
+
+.formulario legend {
+    background-color: var(--dark-orange);
+    width: 95%;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 1rem;
+}
+.campo label {
+   flex-basis: 5rem;
+   margin-left: 1rem;
+   color: white;
+} 
+
+input[type="text"],
+input[type="email"],
+input[type="asunto"],
+textarea
+{
+    flex: 1;
+    border: 1px solid #343a40;
+    padding: 0.5rem;
+    margin-right: 2rem;
+  
+}
+
+.btn-dark{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+input[type="submit"]{
+ font-weight: bold;
+}
+
+
+@media screen and (max-width: 678px) {
+
+    .contenedor {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .formulario {
+        width: 100%;
+        margin-top: 4rem;
+    
+    }
+
+    .btn-dark{
+        margin-top: 2rem;
+    }
+
+
+}
+
+
+
+
+

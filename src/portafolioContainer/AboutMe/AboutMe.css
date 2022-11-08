@@ -1,0 +1,101 @@
+.contenedor{
+  width: 60%;
+  margin: 0 auto ; 
+}
+
+
+  .perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 0px 0px white;
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0 auto;
+    margin-top: 6rem;
+  
+  }
+
+  .foto {
+    height: 92%;
+    width: 92%;
+    background-image: url("../../assets/Home/sobremi.jpeg");
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .foto:hover {
+    transform: scale(1.04);
+    transition: 1s ease-out;
+  }
+
+ 
+
+  .acerca-de .info .titulo {
+    width: 92%;
+    margin: 0 auto;
+    color: var(--dark-orange);
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 15px;
+  
+   
+  }
+  
+  .acerca-de .info .resumen {
+    letter-spacing: 1px;
+    text-align: justify;
+    color: white
+  }
+  
+  .acerca-de .info .label{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .acerca-de .info .progress {
+    background: var(--dark-orange);
+    border-radius: 0px;
+    margin-bottom: 15px;
+    height: 25px;
+  }
+
+  .acerca-de .info .progress:last-child {
+    margin-bottom: 5rem;
+   
+  }
+  
+  .acerca-de .info .progress .progress-bar {
+  background: #6da1bb;
+  line-height: 25px;
+  text-align: left;
+  padding-left: 20px;
+  }
+
+
+  @media screen and (max-width: 678px) {
+
+    .info{
+     padding-left: 1.5rem;
+     padding-right:1.5rem;
+    }
+
+    .perfil {
+      margin-top: 2rem;
+      width: 100%;
+    }
+
+    
+  .acerca-de .info .progress:last-child {
+    margin-bottom: 2rem;
+   
+  }
+
+
+}
