@@ -23,8 +23,8 @@ export default class AboutMe extends Component {
             <div className="foto"> </div>
           </motion.div>
 
-          <motion.div 
-          initial={{
+          <motion.div
+            initial={{
               x: -500,
               opacity: 0,
             }}
@@ -35,22 +35,21 @@ export default class AboutMe extends Component {
             transition={{
               duration: 1.5,
             }}
-          className="info">
+            className="info">
             <h2 className="titulo">Sobre mi</h2>
             <p className="resumen">
-              Soy Moril Jean-francois, Estudiante en el ultimo de Analista
-              programador Computacional. Instituto Profesional de
-              chile(IPCHILE). Me encanta la Informatica y todo que tiene que ver
-              con el mundo tecnologico. pero mi especilidad es Desarrollador
-              web.
+              Soy Moril Jean-francois, Estudiante en el último de ingeniería
+              informática. Instituto Profesional de chile (IPCHILE). Me encanta
+              la informática y todo que tiene que ver con el mundo tecnológico.
+              pero mi especialidad es Desarrollo de aplicaciones web y móviles.
             </p>
 
             <p className="resumen">
               Soy una persona Proactiva y Autodidacta. Siempre con ganas de
-              Aprender cosas nuevas y enfrenta con problemas conplejas hasta
-              encontrar una solucion. Soy una persona muy currioso, me gusta
-              preguntar y investigar sobre las temas que despierta la
-              curiosidad. y me gusta trabajar en equipo.
+              Aprender cosas nuevas y enfrentar problemas complejas hasta
+              encontrar una solución. Soy muy curioso, me gusta preguntar e
+              investigar sobre las tecnologías que quiero aprender. Puedo adaptar
+              cualquier cambio de tecnología y me gusta trabajar en equipo.
             </p>
           </motion.div>
         </div>
