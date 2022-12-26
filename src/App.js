@@ -1,12 +1,10 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
-import React, { useState } from "react";
 import AboutMe from "./portafolioContainer/AboutMe/AboutMe";
 import Contact from "./portafolioContainer/Contact/Contact";
 import Home from "./portafolioContainer/Home/Home";
 import Navbar from "./portafolioContainer/Navbar/Navbar";
 import Projects from "./portafolioContainer/projects/Projects";
-import Footer from "./portafolioContainer/Footer/Footer";
 import Habillity from "./portafolioContainer/habillity/Habillity";
 
 function App() {

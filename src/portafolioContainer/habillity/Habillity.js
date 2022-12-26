@@ -33,29 +33,29 @@ export default class Habillity extends Component {
 
             <p className="label">CSS</p>
             <div className="progress">
-              <div className="progress-bar" style={{ width: "65%" }}>
-                65%
+              <div className="progress-bar" style={{ width: "70%" }}>
+                70%
               </div>
             </div>
 
             <p className="label">Javascript</p>
+            <div className="progress">
+              <div className="progress-bar" style={{ width: "70%" }}>
+                70%
+              </div>
+            </div>
+
+            <p className="label">Nodejs</p>
             <div className="progress">
               <div className="progress-bar" style={{ width: "60%" }}>
                 60%
               </div>
             </div>
 
-            <p className="label">Nodejs</p>
-            <div className="progress">
-              <div className="progress-bar" style={{ width: "20%" }}>
-                20%
-              </div>
-            </div>
-
             <p className="label">Reactjs</p>
             <div className="progress">
-              <div className="progress-bar" style={{ width: "30%" }}>
-                30%
+              <div className="progress-bar" style={{ width: "70%" }}>
+                70%
               </div>
             </div>
 
@@ -68,22 +68,22 @@ export default class Habillity extends Component {
 
             <p className="label">Springboot</p>
             <div className="progress">
-              <div className="progress-bar" style={{ width: "30%" }}>
-                30%
+              <div className="progress-bar" style={{ width: "40%" }}>
+                40%
               </div>
             </div>
 
             <p className="label">Git/Github</p>
             <div className="progress">
               <div className="progress-bar" style={{ width: "15%" }}>
-                15%
+                40%
               </div>
             </div>
 
             <p className="label">Php</p>
             <div className="progress mb-5">
               <div className="progress-bar" style={{ width: "15%" }}>
-                15%
+                30%
               </div>
             </div>
           </div>
