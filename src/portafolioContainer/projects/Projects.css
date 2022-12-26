@@ -1,81 +1,76 @@
-.h1{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    color: white;
-    font-weight: 900;
- 
+.h1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: var(--dark-orange) !important;
+  font-weight: 900;
 }
 
-.card-title{
-    color: var(--dark-orange);
-    font-weight: 900;
+.card-title {
+  color: var(--dark-orange);
+  font-weight: 900;
 }
 
-
-.boton{
-    background-color: var(--dark-orange);
+.boton {
+  background-color: var(--dark-orange);
 }
 
-.card-text{
-    text-align: justify;
+.card-text {
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
-.text-center{
-    font-weight: 900;
+.text-center {
+  font-weight: 900;
 }
 
+.card {
+  margin-bottom: 1rem;
+  max-height: 400px;
+}
 
-      .card{
-        margin-bottom: 1rem;
-    }
-    
-
-    .h1{
-        color: white;
-        font-weight: 900;
-    }
-
+.h1 {
+  color: white;
+  font-weight: 900;
+}
 
 @media screen and (min-width: 678px) {
-    .contenador-card{
-        display:grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 1rem;
-        row-gap: 1rem;
-        justify-content: center;
-       
-    }
+  .contenador-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+    justify-content: center;
+  }
 
-    .card{
-        margin-bottom: 0;
-       
-    }
+  .card {
+    margin-bottom: 0;
+  }
 
-    img{
-        height: 8rem;
-        object-fit: cover;
-        background-size: cover;
-        max-width: 100%;
-        display: block;
-    }
-    
+  img {
+    height: 8rem;
+    object-fit: cover;
+    background-size: cover;
+    max-width: 100%;
+    display: block;
+  }
 
-    .container {
-        max-width: 70%;
-        margin-bottom: 5rem;
-      }
+  .container {
+    max-width: 70%;
+    margin-bottom: 5rem;
+  }
 
-      .card{
-        margin-bottom: 0;
-    }
-    
+  .card {
+    margin-bottom: 0;
+  }
 
-    .h1{
-        margin-top: 5rem;
-        color: white;
-        font-weight: 900;
-    }
-    
+  .h1 {
+    margin-top: 5rem;
+    color: white;
+    font-weight: 900;
+  }
 }
 
 /*

@@ -1,7 +1,9 @@
 import React from "react";
 import Typical from "react-typical";
-import "./Profile.css";
+import { motion } from "framer-motion";
 import {useHistory} from "react-router-dom";
+import "./Profile.css";
+
 
 
 export default function Profile(props) {
@@ -15,7 +17,21 @@ export default function Profile(props) {
   return (
     <div className="profile-container">
       <div className="profile-parent">
-        <div className="profile-details">
+        <motion.div 
+         initial={{
+            x: -500,
+            opacity: 0,
+           // scale: 0.5
+          }}
+          animate={{
+            x: 0,
+            opacity:1,
+           // scale: 1
+          }}
+          transition={{
+            duration: 1.5
+          }}
+        className="profile-details">
           <div className="colz">
                 <div className="colz-icon">
                     <a href="https://www.facebook.com/profile.php?id=100049311472102"
@@ -71,8 +87,7 @@ export default function Profile(props) {
               </h1>
 
               <span className="profile-role-tagline">
-                Habilidad para crear aplicaciones con operaciones front-end y
-                back-end.
+                Habilidad para crear aplicaciones con operaciones front-end y back-end.
               </span>
             </span>
           </div>
@@ -90,11 +105,23 @@ export default function Profile(props) {
               <button className="btn highlighted-btn">Descargar CV</button>
             </a>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="profile-picture">
+        <motion.div 
+       initial={{
+            x: 500,
+            opacity: 0
+          }}
+          animate={{
+            x: 0,
+            opacity:1
+          }}
+          transition={{
+            duration: 1.5
+          }}
+        className="profile-picture">
           <div className="profile-picture-background"></div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

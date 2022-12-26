@@ -1,0 +1,18 @@
+.contenedor{
+  width: 60%;
+  margin: 0 auto ; 
+  margin-top: 100px;
+}
+
+
+  
+  @media screen and (max-width: 678px) {
+
+    .contenedor{
+      width: 100%;
+      margin: 0 auto ; 
+      margin-top: 0px;
+    }
+
+
+}

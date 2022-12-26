@@ -1,8 +1,10 @@
-import "./Contact.css";
+
 import React, { useRef, useState } from "react";
+import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 import Spinner from "../spinner/Spinner";
+import "./Contact.css";
 
 export default function Contact() {
   //state del formulario
@@ -99,7 +101,19 @@ export default function Contact() {
 
   return (
     <div className="contenido-principal contenedor ">
-      <form className="formulario" ref={form} onSubmit={sendEmail}>
+      <motion.form 
+          initial={{
+              x: 500,
+              opacity: 0,
+            }}
+            animate={{
+              x: 0,
+              opacity: 1,
+            }}
+            transition={{
+              duration: 1.5,
+            }}
+      className="formulario" ref={form} onSubmit={sendEmail}>
         <fieldset>
           {error ? (
             <p className="error">Todos los campos son obligatorios</p>
@@ -108,7 +122,7 @@ export default function Contact() {
           <legend>Tus Datos</legend>
 
           <div className="campo">
-            <label for="nombre">Nombre: </label>
+            <label htmlFor="nombre">Nombre: </label>
             <input
               id="nombre"
               type="text"
@@ -120,7 +134,7 @@ export default function Contact() {
           </div>
 
           <div className="campo">
-            <label for="email">Email:</label>
+            <label htmlFor="email">Email:</label>
             <input
               id="email"
               type="email"
@@ -132,7 +146,7 @@ export default function Contact() {
           </div>
 
           <div className="campo">
-            <label for="asunto">Asunto:</label>
+            <label htmlFor="asunto">Asunto:</label>
             <input
               id="asunto"
               type="asunto"
@@ -144,7 +158,7 @@ export default function Contact() {
           </div>
 
           <div className="campo">
-            <label for="tel">Mensaje:</label>
+            <label htmlFor="tel">Mensaje:</label>
             <textarea
               rows="3"
               cols="10"
@@ -157,7 +171,7 @@ export default function Contact() {
 
           <button  className="btn btn-info" type="submit" value="Enviar">Enviar</button>
         </fieldset>
-      </form>
+      </motion.form>
     </div>
 
   );

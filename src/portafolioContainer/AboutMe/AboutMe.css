@@ -14,8 +14,11 @@
     width: 380px;
     margin: 0 auto;
     margin-top: 6rem;
-  
+
   }
+
+
+
 
   .foto {
     height: 92%;
@@ -26,6 +29,8 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  
   
   .foto:hover {
     transform: scale(1.04);
@@ -87,8 +92,11 @@
     }
 
     .perfil {
-      margin-top: 2rem;
+      display: none;
     }
+
+
+
 
     
   .acerca-de .info .progress:last-child {
@@ -96,5 +104,13 @@
    
   }
 
+  .contenedor{
+    width: 100%;
+    margin: 0 auto ; 
+  }
+
 
 }
+
+
+
